@@ -52,7 +52,7 @@ sef --fix
 ### Option 3: Shell Script (No Node.js Required)
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/volta-team/solana-edition-fixer/main/scripts/fix-edition2024.sh | bash
+curl -sSL https://raw.githubusercontent.com/IsSlashy/solana-edition-fixer/main/scripts/fix-edition2024.sh | bash
 ```
 
 ## Usage
@@ -229,7 +229,7 @@ Until Solana's platform-tools upgrade to Cargo 1.85+, this workaround is necessa
 
 ## License
 
-MIT - Created by **[Volta Team](https://github.com/volta-team)**
+MIT - Created by **[IsSlashy](https://github.com/IsSlashy)** / Volta Team
 
 ---
 

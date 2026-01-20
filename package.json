@@ -25,16 +25,16 @@
     "blockchain",
     "web3"
   ],
-  "author": "Volta Team <contact@volta.team>",
+  "author": "IsSlashy <slashyfx@volta.team>",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/volta-team/solana-edition-fixer.git"
+    "url": "git+https://github.com/IsSlashy/solana-edition-fixer.git"
   },
   "bugs": {
-    "url": "https://github.com/volta-team/solana-edition-fixer/issues"
+    "url": "https://github.com/IsSlashy/solana-edition-fixer/issues"
   },
-  "homepage": "https://github.com/volta-team/solana-edition-fixer#readme",
+  "homepage": "https://github.com/IsSlashy/solana-edition-fixer#readme",
   "engines": {
     "node": ">=14.0.0"
   },
