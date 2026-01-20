@@ -1,6 +1,7 @@
 # Solana Edition Fixer
 
-[![npm version](https://badge.fury.io/js/solana-edition-fixer.svg)](https://www.npmjs.com/package/solana-edition-fixer)
+[![npm version](https://img.shields.io/npm/v/solana-edition-fixer.svg)](https://www.npmjs.com/package/solana-edition-fixer)
+[![npm downloads](https://img.shields.io/npm/dm/solana-edition-fixer.svg)](https://www.npmjs.com/package/solana-edition-fixer)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Fix Rust edition 2024 compatibility issues for Solana/Anchor projects.**
