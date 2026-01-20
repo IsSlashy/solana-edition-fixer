@@ -1,0 +1,49 @@
+{
+  "name": "solana-edition-fixer",
+  "version": "1.0.0",
+  "description": "Fix Rust edition 2024 compatibility issues for Solana/Anchor projects. Automatically downgrades problematic crate versions to work with Solana's toolchain.",
+  "main": "src/index.js",
+  "bin": {
+    "solana-edition-fixer": "bin/cli.js",
+    "sef": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "test": "node src/index.js --dry-run",
+    "lint": "eslint src/",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "solana",
+    "anchor",
+    "rust",
+    "edition-2024",
+    "cargo",
+    "dependency",
+    "fixer",
+    "compatibility",
+    "blockchain",
+    "web3"
+  ],
+  "author": "Volta Team <contact@volta.team>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volta-team/solana-edition-fixer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/volta-team/solana-edition-fixer/issues"
+  },
+  "homepage": "https://github.com/volta-team/solana-edition-fixer#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "scripts/",
+    "data/",
+    "README.md",
+    "LICENSE"
+  ]
+}

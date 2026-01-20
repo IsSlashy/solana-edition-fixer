@@ -1,0 +1,294 @@
+{
+  "version": "1.0.0",
+  "description": "Database of Rust crates with versions requiring edition 2024",
+  "lastUpdated": "2025-01-20",
+  "maintainer": "Volta Team",
+  "notes": [
+    "Solana platform-tools v1.42-v1.52 use Cargo 1.75-1.84",
+    "Edition 2024 requires Cargo 1.85+",
+    "These max versions are the last compatible with Cargo < 1.85",
+    "Submit issues/PRs to add new problematic crates"
+  ],
+  "crates": {
+    "constant_time_eq": {
+      "maxCompatible": "0.3.1",
+      "firstIncompatible": "0.4.0",
+      "reason": "0.4.0+ requires edition 2024",
+      "usedBy": ["blake3", "argon2"],
+      "priority": "critical"
+    },
+    "blake3": {
+      "maxCompatible": "1.5.0",
+      "firstIncompatible": "1.6.0",
+      "reason": "1.6.0+ pulls constant_time_eq 0.4.x which requires edition 2024",
+      "usedBy": ["solana-program", "solana-sdk"],
+      "priority": "critical"
+    },
+    "base64ct": {
+      "maxCompatible": "1.6.0",
+      "firstIncompatible": "1.7.0",
+      "reason": "1.7.0+ requires edition 2024",
+      "usedBy": ["pkcs8", "pem-rfc7468", "sec1", "spki"],
+      "priority": "high"
+    },
+    "subtle": {
+      "maxCompatible": "2.5.0",
+      "firstIncompatible": "2.6.0",
+      "reason": "2.6.0+ requires edition 2024",
+      "usedBy": ["curve25519-dalek", "ed25519-dalek", "crypto-common"],
+      "priority": "high"
+    },
+    "zeroize": {
+      "maxCompatible": "1.7.0",
+      "firstIncompatible": "1.8.0",
+      "reason": "1.8.0+ requires edition 2024",
+      "usedBy": ["curve25519-dalek", "ed25519-dalek", "elliptic-curve"],
+      "priority": "high"
+    },
+    "crypto-common": {
+      "maxCompatible": "0.1.6",
+      "firstIncompatible": "0.2.0",
+      "reason": "0.2.0+ requires edition 2024",
+      "usedBy": ["digest", "cipher", "aead"],
+      "priority": "high"
+    },
+    "password-hash": {
+      "maxCompatible": "0.5.0",
+      "firstIncompatible": "0.6.0",
+      "reason": "0.6.0+ requires edition 2024",
+      "usedBy": ["argon2", "pbkdf2"],
+      "priority": "medium"
+    },
+    "digest": {
+      "maxCompatible": "0.10.7",
+      "firstIncompatible": "0.11.0",
+      "reason": "0.11.0+ requires edition 2024",
+      "usedBy": ["sha2", "sha3", "blake2", "md-5"],
+      "priority": "high"
+    },
+    "cipher": {
+      "maxCompatible": "0.4.4",
+      "firstIncompatible": "0.5.0",
+      "reason": "0.5.0+ requires edition 2024",
+      "usedBy": ["aes", "chacha20"],
+      "priority": "medium"
+    },
+    "aead": {
+      "maxCompatible": "0.5.2",
+      "firstIncompatible": "0.6.0",
+      "reason": "0.6.0+ requires edition 2024",
+      "usedBy": ["aes-gcm", "chacha20poly1305"],
+      "priority": "medium"
+    },
+    "inout": {
+      "maxCompatible": "0.1.3",
+      "firstIncompatible": "0.2.0",
+      "reason": "0.2.0+ requires edition 2024",
+      "usedBy": ["cipher"],
+      "priority": "medium"
+    },
+    "universal-hash": {
+      "maxCompatible": "0.5.1",
+      "firstIncompatible": "0.6.0",
+      "reason": "0.6.0+ requires edition 2024",
+      "usedBy": ["poly1305", "ghash"],
+      "priority": "medium"
+    },
+    "signature": {
+      "maxCompatible": "2.2.0",
+      "firstIncompatible": "2.3.0",
+      "reason": "2.3.0+ requires edition 2024",
+      "usedBy": ["ed25519-dalek", "ecdsa", "k256"],
+      "priority": "high"
+    },
+    "elliptic-curve": {
+      "maxCompatible": "0.13.8",
+      "firstIncompatible": "0.14.0",
+      "reason": "0.14.0+ requires edition 2024",
+      "usedBy": ["k256", "p256", "p384"],
+      "priority": "medium"
+    },
+    "sec1": {
+      "maxCompatible": "0.7.3",
+      "firstIncompatible": "0.8.0",
+      "reason": "0.8.0+ requires edition 2024",
+      "usedBy": ["elliptic-curve"],
+      "priority": "medium"
+    },
+    "spki": {
+      "maxCompatible": "0.7.3",
+      "firstIncompatible": "0.8.0",
+      "reason": "0.8.0+ requires edition 2024",
+      "usedBy": ["pkcs8"],
+      "priority": "medium"
+    },
+    "pkcs8": {
+      "maxCompatible": "0.10.2",
+      "firstIncompatible": "0.11.0",
+      "reason": "0.11.0+ requires edition 2024",
+      "usedBy": ["ed25519-dalek", "elliptic-curve"],
+      "priority": "medium"
+    },
+    "der": {
+      "maxCompatible": "0.7.9",
+      "firstIncompatible": "0.8.0",
+      "reason": "0.8.0+ requires edition 2024",
+      "usedBy": ["pkcs8", "spki", "sec1"],
+      "priority": "medium"
+    },
+    "pem-rfc7468": {
+      "maxCompatible": "0.7.0",
+      "firstIncompatible": "0.8.0",
+      "reason": "0.8.0+ requires edition 2024",
+      "usedBy": ["pkcs8"],
+      "priority": "low"
+    },
+    "wit-bindgen": {
+      "maxCompatible": "0.24.0",
+      "firstIncompatible": "0.25.0",
+      "reason": "0.25.0+ requires edition 2024",
+      "usedBy": ["wasip2"],
+      "priority": "high"
+    },
+    "wit-component": {
+      "maxCompatible": "0.24.0",
+      "firstIncompatible": "0.25.0",
+      "reason": "0.25.0+ requires edition 2024",
+      "usedBy": ["wit-bindgen"],
+      "priority": "medium"
+    },
+    "wit-parser": {
+      "maxCompatible": "0.24.0",
+      "firstIncompatible": "0.25.0",
+      "reason": "0.25.0+ requires edition 2024",
+      "usedBy": ["wit-component"],
+      "priority": "medium"
+    },
+    "wasm-encoder": {
+      "maxCompatible": "0.41.0",
+      "firstIncompatible": "0.42.0",
+      "reason": "0.42.0+ requires edition 2024",
+      "usedBy": ["wit-component"],
+      "priority": "medium"
+    },
+    "wasmparser": {
+      "maxCompatible": "0.121.0",
+      "firstIncompatible": "0.122.0",
+      "reason": "0.122.0+ requires edition 2024",
+      "usedBy": ["wasm-encoder", "wasmprinter"],
+      "priority": "medium"
+    },
+    "yoke": {
+      "maxCompatible": "0.7.4",
+      "firstIncompatible": "0.8.0",
+      "reason": "0.8.0+ requires Rust 1.81+ (not edition 2024, but MSRV)",
+      "usedBy": ["icu_locid", "icu_provider", "zerovec"],
+      "priority": "high"
+    },
+    "zerofrom": {
+      "maxCompatible": "0.1.4",
+      "firstIncompatible": "0.1.5",
+      "reason": "0.1.5+ requires edition 2024",
+      "usedBy": ["icu_locid", "zerovec"],
+      "priority": "medium"
+    },
+    "zerovec": {
+      "maxCompatible": "0.10.4",
+      "firstIncompatible": "0.11.0",
+      "reason": "0.11.0+ requires edition 2024",
+      "usedBy": ["icu_locid", "icu_provider"],
+      "priority": "medium"
+    },
+    "borsh": {
+      "maxCompatible": "1.5.0",
+      "firstIncompatible": "1.6.0",
+      "reason": "1.6.0+ may have edition issues with some features",
+      "usedBy": ["anchor-lang", "solana-program"],
+      "priority": "medium"
+    },
+    "borsh-derive": {
+      "maxCompatible": "1.5.0",
+      "firstIncompatible": "1.6.0",
+      "reason": "1.6.0+ may have edition issues",
+      "usedBy": ["borsh"],
+      "priority": "medium"
+    },
+    "sha2": {
+      "maxCompatible": "0.10.8",
+      "firstIncompatible": "0.11.0",
+      "reason": "0.11.0+ requires edition 2024 via crypto-common",
+      "usedBy": ["solana-program", "ed25519-dalek"],
+      "priority": "high"
+    },
+    "sha3": {
+      "maxCompatible": "0.10.8",
+      "firstIncompatible": "0.11.0",
+      "reason": "0.11.0+ requires edition 2024 via crypto-common",
+      "usedBy": ["solana-program"],
+      "priority": "high"
+    },
+    "hmac": {
+      "maxCompatible": "0.12.1",
+      "firstIncompatible": "0.13.0",
+      "reason": "0.13.0+ requires edition 2024",
+      "usedBy": ["pbkdf2"],
+      "priority": "medium"
+    },
+    "pbkdf2": {
+      "maxCompatible": "0.12.2",
+      "firstIncompatible": "0.13.0",
+      "reason": "0.13.0+ requires edition 2024",
+      "usedBy": ["bip39"],
+      "priority": "medium"
+    },
+    "aes": {
+      "maxCompatible": "0.8.4",
+      "firstIncompatible": "0.9.0",
+      "reason": "0.9.0+ requires edition 2024",
+      "usedBy": ["aes-gcm"],
+      "priority": "medium"
+    },
+    "aes-gcm": {
+      "maxCompatible": "0.10.3",
+      "firstIncompatible": "0.11.0",
+      "reason": "0.11.0+ requires edition 2024",
+      "usedBy": ["solana-zk-token-sdk"],
+      "priority": "medium"
+    },
+    "chacha20": {
+      "maxCompatible": "0.9.1",
+      "firstIncompatible": "0.10.0",
+      "reason": "0.10.0+ requires edition 2024",
+      "usedBy": ["chacha20poly1305"],
+      "priority": "medium"
+    },
+    "chacha20poly1305": {
+      "maxCompatible": "0.10.1",
+      "firstIncompatible": "0.11.0",
+      "reason": "0.11.0+ requires edition 2024",
+      "usedBy": [],
+      "priority": "low"
+    },
+    "curve25519-dalek": {
+      "maxCompatible": "4.1.3",
+      "firstIncompatible": "4.2.0",
+      "reason": "4.2.0+ may have edition 2024 dependencies",
+      "usedBy": ["ed25519-dalek", "x25519-dalek"],
+      "priority": "high"
+    },
+    "ed25519-dalek": {
+      "maxCompatible": "2.1.1",
+      "firstIncompatible": "2.2.0",
+      "reason": "2.2.0+ may have edition 2024 dependencies",
+      "usedBy": ["solana-sdk"],
+      "priority": "high"
+    },
+    "x25519-dalek": {
+      "maxCompatible": "2.0.1",
+      "firstIncompatible": "2.1.0",
+      "reason": "2.1.0+ may have edition 2024 dependencies",
+      "usedBy": [],
+      "priority": "low"
+    }
+  }
+}
